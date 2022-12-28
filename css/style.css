@@ -235,4 +235,8 @@ rect {
         margin-right: 20px;
         margin-bottom: 20px;
     }
+
+    .banner__text {
+        width: 60%;
+    }
 }
