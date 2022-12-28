@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+@import url(./base/variables.css);
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    /* para copy paste*/
+    font-family: 'Montserrat', sans-serif;
+    /* familia general*/
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 1rem;
+}
+
+body {
+    background-color: #d5e5eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* margin-left: calc((100% - 940px)/2);
+    margin-right: calc((100% - 940px)/2);
+    padding-left: 20px;
+    padding-right: 20px; */
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E4EEF2;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.container.navbar {
+    margin-top: 0;
+    padding: 0;
+
+}
+
+
+.section form {
+    padding: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #888888;
+    justify-content: space-between;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.nav__logo {
+    margin: 1%;
+    width: 5rem;
+}
+
+.nav-link,
+.btn {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 30px;
+    border: 3px aliceblue solid;
+    color: aliceblue;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(#A7A7A7, #888888);
+    transition-property: border color background-image;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.btn {
+    margin-right: 0;
+}
+
+.nav-link:hover,
+.btn:hover {
+    color: #212529;
+    border: 3px #212529 solid;
+    background-image: linear-gradient(#888888, #666666);
+    transition-property: border color background-image;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+
+}
+
+rect {
+    width: 100px;
+    height: 15px;
+    border-radius: 30px;
+    fill: aliceblue;
+    transition: fill 1s;
+}
+
+.banner {
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.banner__text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.banner__img {
+    width: 100%;
+    margin: 20px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    background-color: #333333;
+    justify-content: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__logo {
+    margin: 1%;
+    width: 5rem;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.footer__botones {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 0;
+}
+
+.footer__botones p {
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    font-size: 0.8rem;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.footer__nav {
+    padding-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+
+    .footer__logo {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer__botones {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    html {
+        text-align: left;
+    }
+
+    .banner {
+        flex-direction: row;
+    }
+
+    .banner__img {
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
