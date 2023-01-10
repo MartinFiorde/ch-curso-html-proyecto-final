@@ -1,0 +1,67 @@
+@import "../utilities/variables";
+
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+header section div,
+main section div {
+    width: 90%;
+}
+
+.banner__img {
+    display: none;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+input.btn {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline;
+}
+
+label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+
+    header section div,
+    main section div {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .flex.banner {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .banner__text {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        height: 900px;
+    }
+
+    .banner__img {
+        display: block;
+        height: 900px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    form {
+        padding-right: 0;
+    }
+
+}

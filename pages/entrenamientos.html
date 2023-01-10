@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
                         <li class="nav-item nav__enlace"><a class="nav-link" href="ficha.html">Ficha personal</a></li>
-                        <li class="nav-item nav__enlace"><a class="nav-link" href="entrenamientos.html">Entrenamientos</a></li>
+                        <li class="nav-item nav__enlace"><a class="nav-link" href="#">Entrenamientos</a></li>
                         <li class="nav-item nav__enlace"><a class="nav-link" href="guias.html">Guias</a></li>
                         <li class="nav-item nav__enlace"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
@@ -37,119 +37,124 @@
             <section class="flex banner">
                 <div class="banner__text">
                     <h1>Entrenamientos</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo sed perferendis iusto id vero impedit odit, laudantium, quo reprehenderit possimus est labore alias in? Iste, iusto. Nulla, eligendi adipisci?</p>
+                    <p>¡Consulta todos tus entrenamientos en un solo lugar!</p>
                 </div>
                 <img class="banner__img" src="../img/ciclista-2.jpg" alt="hombre andando en bicicleta" />
             </section>
         </header>
 
         <main class="container">
-            
-            <!-- PRIMER MODELO DE GRID CON BOOSTSTRAP -->
-            <div class="row mb-2">
-                <div class="col-md-6">
-                    <div class="flex__card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <p class="mb-1 text-muted">Nov 12</p>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" role="img" width="200" height="250" src="../img/logo.png" class="card-img-top" alt="..." aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="flex__card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success">Design</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <p class="mb-1 text-muted">Nov 11</p>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" role="img" width="200" height="250" src="../img/logo.png" class="card-img-top" alt="..." aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="flex__card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success">Etc</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <p class="mb-1 text-muted">Nov 10</p>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" role="img" width="200" height="250" src="../img/logo.png" class="card-img-top" alt="..." aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="flex__card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success">Etc</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <p class="mb-1 text-muted">Nov 10</p>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" role="img" width="200" height="250" src="../img/logo.png" class="card-img-top" alt="..." aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <!-- SEGUNDO MODELO DE GRID CON BOOSTSTRAP -->
+            <!-- PRIMER MODELO FUNCIONAL DE GRID CON BOOSTSTRAP -->
             <div class="row">
-                <article class="col-sm-12 col-md-6 col-lg-3">
-                    <figure class="card">
-                        <img src="../img/logo.png" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <figcaption class="card-title">Card title</figcaption>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-oferta">Go somewhere</a>
+                <article class="col-md-6">
+                    <figure class="card__ flex__card row mb-4 g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+                        <figcaption class="card__text col p-2 pe-0 d-flex flex-column position-static">
+                            <h2 class="card__title d-inline-block mb-0">Ciclismo</h2>
+                            <p class="mb-3 text-muted">Dic 30</p>
+                            <p class="card-text"><strong>Duración: </strong>00:39:20 hs</p>
+                            <p class="card-text"><strong>Calorias: </strong>272 kcal</p>
+                            <p class="card-text"><strong>Vel. Prom.: </strong>9.55 km/h</p>
+                            <a href="#" class="card__ stretched-link"></a>
+                        </figcaption>
+                        <div class="card__img col-auto d-none d-lg-block">
+                            <img class="card__img__content bd-placeholder-img rounded shadow-sm m-4" src="../img/entrenamientos/ciclismo.jpg" alt="ciclismo" aria-label="Placeholder: ciclismo" focusable="false" />
                         </div>
                     </figure>
                 </article>
-                <article class="col-sm-12 col-md-6 col-lg-3">
-                    <figure class="card">
-                        <img src="../img/logo.png" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <figcaption class="card-title">Card title</figcaption>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-oferta">Go somewhere</a>
+                <article class="col-md-6">
+                    <figure class="card__ flex__card row mb-4 g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+                        <figcaption class="card__text col p-2 pe-0 d-flex flex-column position-static">
+                            <h2 class="card__title d-inline-block mb-0">Artes marciales</h2>
+                            <p class="mb-3 text-muted">Dic 23</p>
+                            <p class="card-text"><strong>Duración: </strong>01:00:00 hs</p>
+                            <p class="card-text"><strong>Calorias: </strong>414 kcal</p>
+                            <p class="card-text"><strong>Frec. Card. Prom.: </strong>127 lpm</p>
+                            <a href="#" class="stretched-link"></a>
+                        </figcaption>
+                        <div class="card__img col-auto d-none d-lg-block">
+                            <img class="card__img__content bd-placeholder-img rounded shadow-sm m-4" src="../img/entrenamientos/karate.jpg" alt="artes marciales" aria-label="Placeholder: artes marciales" preserveAspectRatio="xMidYMid slice" focusable="false" />
                         </div>
                     </figure>
                 </article>
-                <article class="col-sm-12 col-md-6 col-lg-3">
-                    <figure class="card">
-                        <img src="../img/logo.png" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <figcaption class="card-title">Card title</figcaption>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-oferta">Go somewhere</a>
+                <article class="col-md-6">
+                    <figure class="card__ flex__card row mb-4 g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+                        <figcaption class="card__text col p-2 pe-0 d-flex flex-column position-static">
+                            <h2 class="card__title d-inline-block mb-0">Elongación</h2>
+                            <p class="mb-3 text-muted">Dic 15</p>
+                            <p class="card-text"><strong>Duración: </strong>01:00:00 hs</p>
+                            <p class="card-text"><strong>Calorias: </strong>398 kcal</p>
+                            <p class="card-text"><strong>Frec. Card. Prom.: </strong>106 lpm</p>
+                            <a href="#" class="card__ stretched-link"></a>
+                        </figcaption>
+                        <div class="card__img col-auto d-none d-lg-block">
+                            <img class="card__img__content bd-placeholder-img rounded shadow-sm m-4" src="../img/entrenamientos/elongar.jpg" alt="elongación" aria-label="Placeholder: elongación" preserveAspectRatio="xMidYMid slice" focusable="false" />
                         </div>
                     </figure>
                 </article>
-                <article class="col-sm-12 col-md-6 col-lg-3">
-                    <figure class="card">
-                        <img src="../img/logo.png" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <figcaption class="card-title">Card title</figcaption>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-oferta">Go somewhere</a>
+                <article class="col-md-6">
+                    <figure class="card__ flex__card row mb-4 g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+                        <figcaption class="card__text col p-2 pe-0 d-flex flex-column position-static">
+                            <h2 class="card__title d-inline-block mb-0">Running</h2>
+                            <p class="mb-3 text-muted">Dic 10</p>
+                            <p class="card-text"><strong>Duración: </strong>01:00:00 hs</p>
+                            <p class="card-text"><strong>Calorias: </strong>398 kcal</p>
+                            <p class="card-text"><strong>Frec. Card. Prom.: </strong>106 lpm</p>
+                            <a href="#" class="card__ stretched-link"></a>
+                        </figcaption>
+                        <div class="card__img col-auto d-none d-lg-block">
+                            <img class="card__img__content bd-placeholder-img rounded shadow-sm m-4" src="../img/entrenamientos/correr.jpg" alt="running" aria-label="Placeholder: running" preserveAspectRatio="xMidYMid slice" focusable="false" />
                         </div>
                     </figure>
                 </article>
             </div>
-            
+
+            <!-- 
+            SEGUNDO MODELO FUNCIONAL DE GRID CON BOOSTSTRAP 
+
+            <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <figure class="card">
+                    <img src="../img/logo.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <figcaption class="card-title">Card title</figcaption>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-oferta">Go somewhere</a>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <figure class="card">
+                    <img src="../img/logo.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <figcaption class="card-title">Card title</figcaption>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-oferta">Go somewhere</a>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <figure class="card">
+                    <img src="../img/logo.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <figcaption class="card-title">Card title</figcaption>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-oferta">Go somewhere</a>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-3">
+                <figure class="card">
+                    <img src="../img/logo.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <figcaption class="card-title">Card title</figcaption>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-oferta">Go somewhere</a>
+                    </div>
+                </figure>
+            </article>
+            </div> 
+            -->
+
         </main>
 
         <footer class="container footer flex">
