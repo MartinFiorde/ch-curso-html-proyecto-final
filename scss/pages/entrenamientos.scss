@@ -1,0 +1,65 @@
+@import "../utilities/variables";
+
+.flex__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.text-muted {
+    @extend .card-text;
+}
+
+.card__ {
+    border-radius: 40px !important;
+
+    &text {
+        font-family: $secondFontFamily;
+        strong {
+            display: inline;
+        }
+    }
+
+    &img__content {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    h2,
+    .card-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    strong {
+        display: block;
+    }
+
+    h2,
+    .card-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1400px) {
+    strong {
+        display: inline;
+    }
+}

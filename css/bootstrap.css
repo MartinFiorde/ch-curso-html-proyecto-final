@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* imports agregados aqui para respetar la precedencia */
+/* IMPORTS AGREGADOS PARA RESPETAR ORDEN DE PRECEDENCIA */
 @import url(./base/normalize.css);
 @import url(./base/reset.css);
 
