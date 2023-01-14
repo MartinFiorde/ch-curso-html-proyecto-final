@@ -4,7 +4,8 @@
 form {
     padding-left: 20px;
     padding-right: 20px;
-    text-align: left;
+    text-align: center;
+    width: 90%;
 }
 
 header section div,
@@ -12,18 +13,30 @@ main section div {
     width: 90%;
 }
 
-.banner__img {
-    display: none;
+.btns {
+    width: 100%;
+}
+
+.banner {
+    align-items: center;
+    &__text {
+        align-items: center;
+        width: 90%;
+    }
+    &__img {
+        display: none;
+    }
 }
 
 textarea {
     margin-bottom: 20px;
 }
 
-input.btn {
+div input.btn {
     margin-bottom: 20px;
     margin-right: 20px;
     display: inline;
+    width: 130px;
 }
 
 label {
@@ -62,5 +75,7 @@ label {
 
     form {
         padding-right: 0;
+        width: 90%;
+        text-align: left;
     }
 }

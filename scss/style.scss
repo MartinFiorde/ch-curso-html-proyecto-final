@@ -49,9 +49,11 @@ body {
 .flex {
     @include flex(0, 0, center, 0);
     &__column {
-        flex-direction: column;
+        @include flex(column, 0, 0, 0);
+        
     }
 }
+
 
 .navbar {
     font-family: $secondFontFamily;

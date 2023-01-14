@@ -24,15 +24,16 @@
 
     &text {
         font-family: $secondFontFamily;
-        strong {
-            display: inline;
-        }
     }
 
     &img__content {
         width: 250px;
         height: 250px;
     }
+}
+
+br {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -49,8 +50,8 @@
 }
 
 @media (min-width: 1200px) {
-    strong {
-        display: block;
+    br {
+        display: inherit;
     }
 
     h2,
@@ -60,7 +61,7 @@
 }
 
 @media (min-width: 1400px) {
-    strong {
-        display: inline;
+    br {
+        display: none;
     }
 }
