@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-    "sass:watch": "sass --watch scss/style.scss:css/style.css scss/pages/index.scss:css/pages/index.css scss/pages/ficha.scss:css/pages/ficha.css scss/pages/entrenamientos.scss:css/pages/entrenamientos.css scss/pages/guias.scss:css/pages/guias.css scss/pages/contacto.scss:css/pages/contacto.css"
+    "sass:watch": "sass --watch scss/style.scss:css/style.css scss/pages/index.scss:css/pages/index.css scss/pages/ficha.scss:css/pages/ficha.css scss/pages/entrenamientos.scss:css/pages/entrenamientos.css scss/pages/guias.scss:css/pages/guias.css scss/pages/contacto.scss:css/pages/contacto.css",
+    "purge:bootstrap":"purgecss --css css/bootstrap.css --content *.html -o css/bootstrap-lite.css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/MartinFiorde/ch-curso-html-proyecto-final#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "sass": "^1.57.1"
   }
 }
