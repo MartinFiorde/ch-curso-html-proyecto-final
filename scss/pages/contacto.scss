@@ -63,6 +63,7 @@ label {
         align-content: flex-start;
         justify-content: flex-start;
         height: 900px;
+        width: 50%;
     }
 
     .banner__img {
@@ -75,7 +76,13 @@ label {
 
     form {
         padding-right: 0;
-        width: 90%;
+        width: auto;
         text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    form {
+        width: 90%;
     }
 }
