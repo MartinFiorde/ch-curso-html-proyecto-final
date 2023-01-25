@@ -7,8 +7,10 @@ $footerColor: #333333;
 $fontBlackColor: #212529;
 $fontWhiteColor: aliceblue;
 $paletaFonts: (
-    "fontBlackColor": #212529,
-    "fontWhiteColor": aliceblue,
+    "fontBlackColor": $fontBlackColor,
+    "fontWhiteColor": $fontWhiteColor,
+    "footerColor": $footerColor,
+    "navbarColor": $navbarColor
 );
 
 // fuentes

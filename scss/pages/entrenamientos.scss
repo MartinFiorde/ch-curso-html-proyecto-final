@@ -1,6 +1,28 @@
 @import "../utilities/_variables";
 @import "../utilities/_mixins";
 
+.card__btn {
+    display: block;
+    font-family: $secondFontFamily;
+    margin-right: 30px;
+    border: 3px map-get($map: $paletaFonts, $key: fontWhiteColor) solid;
+
+    border-radius: 30px;
+    transition-property: border background-color box-shadow;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    margin-right: 0;
+}
+
+.card__btn:hover {
+    border: 1px map-get($map: $paletaFonts, $key: navbarColor) solid !important;
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.75) !important;
+    background-color: $bgColor;
+    transition-property: border background-color box-shadow;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
 .flex__card {
     display: flex;
     flex-direction: column;
@@ -58,10 +80,20 @@ br {
     .card-text {
         text-align: left;
     }
+
+    .card__title {
+        height: 6rem;
+        overflow: hidden;
+    }
 }
 
 @media (min-width: 1400px) {
     br {
         display: none;
+    }
+
+    .card__title {
+        height: auto;
+        overflow: auto;
     }
 }
